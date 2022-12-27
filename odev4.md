@@ -2,20 +2,26 @@ Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden ger�
 
 1)film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
 
-**select distinct replacement_cost from film
-
+```
+select distinct replacement_cost from film
+```
 2)film tablosunda bulunan replacement_cost sütununda birbirinden farklı kaç tane veri vardır?
 
-**select count( distinct replacement_cost) from film
-
+```
+select count( distinct replacement_cost) from film
+```
 3)film tablosunda bulunan film isimlerinde (title) kaç tanesini T karakteri ile başlar ve aynı zamanda rating 'G' ye eşittir?
 
-**select count(title) from film where title like "t%" and rating="G"
-
+```
+select count(title) from film where title like "t%" and rating="G"
+```
 4)country tablosunda bulunan ülke isimlerinden (country) kaç tanesi 5 karakterden oluşmaktadır?
 
-**select count(country) from country where country like "_____"
-
+```
+select count(country) from country where country like "_____"
+```
 5)city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?
 
-**select count(sehir) from city where sehir like "%R" or sehir like "%r"
+```
+select count(sehir) from city where sehir like "%R" or sehir like "%r"
+```
